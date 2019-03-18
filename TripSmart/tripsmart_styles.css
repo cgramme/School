@@ -1,0 +1,358 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+	
+}
+#content {
+	background-color: hsla(0, 50%, 100%, 0.5);
+	box-shadow: 0 0 10px #999;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+
+#video-player {
+	width:320px;
+	height: 240px;
+	float: left;
+	margin: 10px;
+}
+
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	clear: none;
+	float: none;
+}
+.header_div {
+    background-image: url(assets/tripsmart_logo.gif);
+    background-repeat: no-repeat;
+    height: 70px;
+    margin-top: 10px;
+}
+.nav_div {
+	width: 30%;
+	float: left;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-right-width: thin;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-left-width: thin;
+	text-indent: 3px;
+}
+.nav_ul {
+	width: 100%;
+	background-color: #A1D7E5;
+	list-style-type: none;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	margin-left: 0;
+}
+.fluid.nav_div .fluid.fluidList.nav_ul li {
+	border-bottom: thin solid #211E1E;
+}
+.nav_ul_li {
+}
+.intro_paragraph {
+	width: 97%;
+	float:none; 
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	clear: none;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.paragraph_text {
+	width: 50%;
+	display: block;
+	float: right;
+	vertical-align: top;
+	clear: right;
+}
+.footer_div {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: small;
+	text-align: center;
+	background-color: #525528;
+	margin-top: 10px;
+	color: #fff;
+}
+.img_div {
+	margin-top: 10px;
+	text-align: center;
+}
+.list_terms {
+    font-family: bad-script;
+    color: #444;
+    font-weight: 400;
+    font-size: 1.5em;
+    display: block;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px #ccc;
+    margin-bottom: -20px;
+}
+
+h1 {
+    font-size: 2.2em;
+    font-weight: 400;
+    font-family: bad-script;
+    color: #333;
+	text-shadow: 1px 1px 1px #ccc;
+}
+img {
+	border: none;
+	box-shadow: 1px 1px 5px #777;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+	width: 99%;
+}
+img.left_img, img.right_img {
+	float: none;
+	
+}
+.menu_bar {
+    color: #A0AEFF;
+    text-align: center;
+    background: linear-gradient(0deg, #818459, #525528);
+}
+.menu_bar ul {
+	padding: 5px 0 5px 0;
+}
+li {
+    display: inline;
+}
+ul li a {
+    width: 100%;
+    text-decoration: none;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family: bad-script;
+    font-style: normal;
+    font-weight: 400;
+	transition: background 0.5s;
+}
+ul li a:hover {
+    color: #421B4D;
+    background: #C08521;
+
+}
+table {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-size: small;
+}
+tr td img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.featured_items {
+    width: 40%;
+}
+.catalog_items {
+    width: 30%;
+    text-align: center;
+}
+.catalog_prices {
+    width: 30%;
+    text-align: center;
+}
+.menu_bar ul li a {
+    color: #fff;
+}
+.travel_photo_div {
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+.contact_info {
+    color: #000000;
+    font-style: italic;
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	table {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	}
+	
+	img {
+		border: 1px solid #999;
+		margin-top: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		border-radius: 2px;
+		width: auto;
+	}
+	img.left_img {
+		float: left;
+	}
+	img.right_img {
+		float: right;
+	}
+	
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+.header_div {
+	background-image: url(assets/tripsmart_banner.jpg);
+	height: 126px;
+	box-shadow: 0 0 5px #777;
+}
+.nav_div {
+width: 30%;
+}
+.nav_ul {
+width: 100%;
+margin-left: 0;
+}
+.nav_ul_li {
+}
+.intro_paragraph {
+}
+.paragraph_text {
+}
+.footer {
+}
+.img_div {
+}
+.menu_bar {
+}
+.travel_photo_div {
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+	
+	table {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-size: medium;
+	}
+
+.gridContainer {
+	width: 88.5%;
+	max-width: 975px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+.header_div {
+}
+.nav_div {
+width: 30%;
+}
+.nav_ul {
+width: 100%;
+margin-left: 0;
+}
+.nav_ul_li {
+}
+.intro_paragraph {
+}
+.paragraph_text {
+}
+.footer {
+}
+.img_div {
+}
+.menu_bar {
+}
+.travel_photo_div {
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}
