@@ -1,0 +1,543 @@
+body, html, iframe, ul, li, p, nav, header, main, nav, footer, figure, figcaption, aside, section, article, h1, h2, h3, h4, h5 {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	background-color: #000;
+	background: url(media/race_track1_darker2.jpg) fixed;
+	background-size: 100% 100%;
+}
+
+footer {
+	width: 100%;
+	padding: 20px 0;
+	background-color: #fff;
+	text-align: center;
+	clear: both;
+}
+
+footer a {
+	color: #5e9bff;
+	font-size: 20px;
+	font-family: 'Montserrat';
+	font-weight: 500;
+}
+
+footer a:link {
+	color: #5e9bff;
+}
+
+footer a:visited {
+	color: #821616;
+}
+
+footer a:hover {
+	color: #1c407a;
+	cursor: pointer;
+}
+
+footer a:active {
+	color: #dee506;
+}
+
+header {
+	width: 100%;
+	height: 104px;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+header h1 {
+	width: 40%;
+	text-align: center;
+	font-size: 70px;
+	font-family: 'Montserrat';
+	font-weight: 100;
+	color: #000;
+	display: inline-block;
+	float: left;
+}
+
+header .blue-line {
+	width: 400px;
+	height: 2px;
+	background-color: #5e9bff;
+	position: relative;
+	top: -30px;
+}
+
+nav {
+	width: 60%;
+	display: inline-block;
+	text-align: center;
+}
+
+nav ul {
+	perspective: 500px;
+}
+
+nav li {
+	display: inline-block;
+	width: 19.8%;
+	margin: 0.2% 0.1%;
+	height: 100px;
+	background: linear-gradient(120deg, #111, #333);
+	float: left;
+	text-align: center;
+	border-radius: 5px;
+	transition: transform 0.5s ease-in-out;
+}
+
+nav li:hover {
+	transform: rotateX(-10deg) rotateY(-10deg);
+	cursor: pointer;
+}
+
+nav p {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+nav img {
+	width: 60%;
+	height: 60%;
+}
+
+main {
+	width: 80%;
+	margin: auto;
+	padding-top: 0px;
+}
+
+main .left-column {
+	width: 50%;
+	float: left;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+main .right-column {
+	width: 50%;
+	float: right;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+main .center-column {
+	width: 100%;
+	text-align: center;
+	clear: both;
+	margin-bottom: 50px;
+}
+
+.intro-title {
+	margin: auto;
+	width: 800px;
+	margin-top: 70px;
+}
+
+.intro-title img {
+	position: absolute;
+	width: 120px;
+	height: 170px;
+	margin: 50px 0 0 180px;
+	transform: rotate(-20deg);
+}
+
+main h2 {
+	color: #fff;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-weight: 200;
+	font-size: 55px;
+	margin-bottom: 100px;
+	padding-top: 100px;
+	position: relative;
+	text-shadow: 1px 1px 5px #000;
+}
+
+main .home-title {
+	color: #fff;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-weight: 200;
+	font-size: 75px;
+	margin-bottom: 150px;
+	margin-left: 50px;
+	position: relative;
+	text-shadow: 1px 1px 5px #000;
+}
+
+.color-lines {
+	position: absolute;
+	margin: -30px 0 0 50px;
+	transform: rotate(-30deg);
+}
+
+.about {
+	width: 90%;
+	margin: 0 auto 20px auto;
+	text-align: left;
+}
+
+.about span, .rally-racing span {
+	color: #5e9bff;
+	font-size: 60px;
+	float: left;
+	font-family: 'Montserrat';
+	height: 60px;
+	position: relative;
+	top: -7px;
+	font-weight: 200;
+}
+
+.about p {
+	color: #fff;
+	font-size: 22px;
+}
+
+.video-container {
+	width: 450px;
+	height: 350px;
+	background-color: #5e9bff;
+	border-radius: 2px;
+	padding: 2px;
+	margin: 30px auto 0 auto;
+}
+
+.video-container iframe {
+	width: 450px;
+	height:350px;
+}
+
+.product-container {
+	padding: 5px;
+	width: 430px;
+	height: 220px;
+	background-color: #fff;
+	margin: auto;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.product-container h4 {
+	font-size: 20px;
+	font-family: 'Montserrat';
+	margin: 10px 0;
+}
+
+.product-container img {
+	width: 180px;
+	height: 180px;
+	float: left;
+}
+
+.product-details {
+	text-align: left;
+	margin-top: 10px;
+}
+
+.product-details p {
+	font-size: 15px;
+	color: #555;
+}
+
+.product-container span {
+	color: #5e9bff;
+	font-size: 22px;
+}
+
+.product-container button {
+	position: relative;
+	top: 20px;
+	left: 20px;
+	background-color: #5e9bff;
+	border-radius: 5px;
+	border: none;
+	width: 200px;
+	height: 40px;
+	font-size: 20px;
+}
+
+form button {
+	position: relative;
+	background-color: #5e9bff;
+	border-radius: 5px;
+	border: none;
+	width: 200px;
+	height: 40px;
+	font-size: 20px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.news-container {
+	padding: 5px;
+	width: 430px;
+	height: auto;
+	background-color: #fff;
+	margin: auto;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.news-container:hover {
+	cursor: pointer;
+}
+
+.news-main-container {
+	padding: 5px;
+	width: 80%;
+	height: auto;
+	background-color: #fff;
+	margin: auto;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.news-main-container:hover {
+	cursor: pointer;
+}
+
+.news-main-container img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.news-container img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.news-container h3, .news-main-container h3 {
+	padding: 5px;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+.contact-container {
+	width: 800px;
+	padding: 20px;
+	background-color: #fff;
+	margin: auto;
+	border-radius: 10px;
+}
+
+.contact-container input {
+	display: inline-block;
+}
+
+.inline p {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.contact-container textarea, .contact-container .textbox{
+	margin-bottom: 20px;
+	border-radius: 5px;
+	background-color: #ddd;
+}
+
+textarea:focus {
+	background-color: #ccdfff;
+}
+
+.contact-container select {
+	margin-top: 10px;
+}
+
+.contact-container img {
+	width: 50px;
+	height: 50px;
+	float: left;
+	opacity: 0.8;
+}
+
+.clear {
+	clear: both;
+}
+
+hr.main {
+	clear: both;
+	width: 70%;
+	height: 1px;
+	margin-bottom: 100px;
+	border: none;
+	background-color: #555;
+}
+
+.page-link {
+	width: 80%;
+	height: 90px;
+	background: linear-gradient(#111, #222);
+	padding: 10px;
+	border-radius: 10px;
+	margin: 0 auto 20px auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.page-link img {
+	width: 90px;
+	height: 90px;
+	float: left;
+	border-radius: 2px;
+	margin-right: 20px;
+}
+
+.page-link p {
+	text-align: left;
+	color: #fff;
+	margin-top: 35px;
+	font-size: 15px;
+}
+
+.history h3 {
+	color: #5e9bff;
+	font-family: 'Montserrat';
+	font-size: 30px;
+	font-weight: 200;
+
+}
+
+.history p {
+	color: #fff;
+	width: 80%;
+	margin: 30px auto;
+}
+
+.rally-racing p{
+	color: #fff;
+	text-align: left;
+	margin-top: 100px;
+}
+
+
+
+@media only screen and (max-width: 1150px){
+
+	header h1 {
+		font-size: 40px;
+		margin-top: 20px;
+	}
+
+	header hr {
+		width: 250px;
+		height: 1px;
+		top: -20px;
+	}
+
+	main h2 {
+		font-size: 30px;
+		margin-bottom: 30px;
+		padding-top: 30px;
+	}
+
+	hr.main {
+		clear: both;
+		width: 70%;
+		height: 1px;
+		margin-bottom: 40px;
+		border: none;
+		background-color: #555;
+	}
+
+	main .right-column, main .left-column {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+
+	.news-container {
+		width: 80%;
+	}
+
+	.contact-container {
+		width: 80%;
+		padding: 20px;
+		background-color: #fff;
+		margin: auto;
+		border-radius: 10px;
+	}
+
+	.intro-title {
+		margin: auto;
+		width: 580px;
+		margin-top: 70px;
+	}
+
+	.intro-title img {
+		position: absolute;
+		width: 120px;
+		height: 170px;
+		margin: -20px 0 0 75px;
+		transform: rotate(-20deg);
+	}
+
+	main .home-title {
+		color: #fff;
+		text-align: center;
+		font-family: 'Montserrat';
+		font-weight: 200;
+		font-size: 75px;
+		margin-bottom: 80px;
+		margin-left: 50px;
+		position: relative;
+		text-shadow: 1px 1px 5px #000;
+	}
+
+}
+
+@media only screen and (max-width: 750px){
+
+	header {
+		height: 162px;
+	}
+
+	header h1 {
+		font-size: 40px;
+		display: block;
+		float: none;
+		width: 100%;
+		margin-top: 0;
+	}
+
+	header .blue-line {
+		width: 250px;
+		height: 1px;
+		top: -20px;
+	}
+
+	nav {
+		margin-top: -33px;
+		width: 100%;
+	}
+
+	.intro-title {
+		margin: auto;
+		width: 280px;
+		margin-top: 70px;
+	}
+
+	.intro-title img {
+		position: absolute;
+		width: 50px;
+		height: 70px;
+		margin: 10px 0 0 35px;
+		transform: rotate(-20deg);
+	}
+
+	.intro-title h2 {
+		font-size: 40px;
+	}
+
+}
+

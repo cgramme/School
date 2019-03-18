@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Pure Racing::News</title>
+	<meta name="description" content="Pure racing is a great place to get quality auto parts, videos, and racing news.">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel='stylesheet' href='pure_racing.css'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Pure Racing<span class="blue-line"></span></h1>
+			<nav>
+				<ul>
+					<li onclick="location.href='index.html';">
+						<p>Home</p>
+						<img src="media/home.png" alt="exhaust muffler" />
+					</li>
+					<li onclick="location.href='products.html';">
+						<p>Products</p>
+						<img src="media/exhaust_pipe.png" alt="exhaust muffler" />
+					</li>
+					<li onclick="location.href='news.html';">
+						<p>News</p>
+						<img src="media/newspaper.png" alt="newspaper" />
+					</li>
+					<li onclick="location.href='racing.html';">
+						<p>Racing</p>
+						<img src="media/checkered_flag2.png" alt="checkered flag" />
+					</li>
+					<li onclick="location.href='diy.html';">
+						<p>DIY</p>
+						<img src="media/workbench.png" alt="workbench" />
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h2>Contact</h2>
+			<div class="center-column">
+				<div class="contact-container">
+					<img src="media/envelope.png" alt="envelope">
+					<form class="contact-form clear" name="Contact" action="mailto:cgramme@student.centralgatech.edu" method="POST">
+						<div class="left-column">
+							<p>First Name</p>
+				            <input class="textbox" type="text" placeholder="Enter your name" name="first name">
+				            <p>Last Name</p>
+				            <input class="textbox" type="text" placeholder="Enter your name" name="last name">
+				            <p>What kind of car do you own?</p>
+				            <input class="textbox" type="text" placeholder="Enter your car" name="car type">
+				            <br>
+				            <p>Select your preferred motorsports:</p>
+				            <div class="inline">
+					            <input name="board type" value="Snowboard" type="checkbox">
+					            <p><small>Drifting</small></p>
+					            <input name="board type" value="Skateboard" type="checkbox">
+					            <p><small>Rally</small></p>
+					            <input name="board type" value="Surfboard" type="checkbox">
+					            <p><small>Formula 1</small></p>
+				            </div>
+						</div>
+						<div class="right-column">
+							<p>Message</p>
+			              	<textarea name="Message" cols="40" rows="10" placeholder="Enter your message"></textarea>
+			              	<br>
+			              	<p>Are you involved in any motorsports?</p>
+			              	<div class="inline">
+			              		<input name="motorsports" value="yes" checked="checked" type="radio">
+					            <p><small>Yes</small></p>
+					            <input name="motorsports" value="no" checked="checked" type="radio">
+					            <p><small>No</small></p>
+					            <input name="motorsports" value="considering" checked="checked" type="radio">
+					            <p><small>I'm considering it</small></p>
+					            <br>
+					            <p>Select your age:</p>
+					            <select>
+								   <option value="1-10">1 - 10</option>
+								   <option value="11-15">11 - 15</option>
+								   <option value="16-19">16 - 19</option>
+								   <option value="20-24">20 - 24</option>
+								   <option value="25-29">25 - 29</option>
+								   <option value="30-39">30 - 39</option>
+								   <option value="40-49">40 - 49</option>
+								   <option value="50+">50+</option>
+								</select>
+			              	</div>
+						</div>
+						<div class="clear">
+							<button name="reset" type="reset">Reset</button>
+		           			<button name="submit" type="submit">Submit</button>
+						</div>
+		         	</form>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<a href="mailto:cgramme@student.centralgatech.edu">Contact</a>
+			<p>1213 Maple Dr., Griffin GA 30260</p>
+		</footer>
+	</div>
+</body>
+</html>
