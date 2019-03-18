@@ -1,0 +1,47 @@
+
+body {
+	background: #222;
+	color: #fff;
+	text-align: center;
+}
+
+h1, h2, th {
+	font-family: "Open Sans Condensed";
+}
+
+html {
+	font-family: "Open Sans";
+}
+form {
+	background: #1d69e2;
+	border-radius: 20px;
+	width: 600px;
+	text-align: center;
+	padding: 20px 0;
+	margin: auto;
+}
+
+input[type="text"] {
+	border-radius: 20px;
+	padding: 5px;
+}
+
+input[type="submit"] {
+	background: #fff;
+	border-radius: 20px;
+	padding: 10px;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+table {
+	background: #1d69e2;
+	border-radius: 20px;
+	width: 600px;
+	text-align: center;
+	padding: 20px;
+	margin: auto;
+}
